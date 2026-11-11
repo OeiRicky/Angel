@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Angelia Salam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500&family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pink: #ff8fb8;
+      --pink-deep: #e0538a;
+      --peach: #ffd9c7;
+      --lavender: #e6d9ff;
+      --ink: #5a3a4a;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: linear-gradient(160deg, #fff0f6 0%, var(--peach) 50%, var(--lavender) 100%);
+      font-family: "Fredoka", "Trebuchet MS", system-ui, sans-serif;
+      color: var(--ink);
+      padding: 16px;
+    }
+    .card {
+      position: relative;
+      z-index: 2;
+      background: rgba(255, 255, 255, 0.75);
+      border: 3px dashed var(--pink);
+      border-radius: 36px;
+      padding: 44px 40px 36px;
+      text-align: center;
+      box-shadow: 0 12px 40px rgba(224, 83, 138, 0.18);
+      max-width: 440px;
+      width: 100%;
+    }
+    .icon {
+      font-size: 3rem;
+      display: inline-block;
+      animation: bounce 1.6s ease-in-out infinite;
+    }
+    h1 {
+      font-family: "Pacifico", cursive;
+      font-weight: 400;
+      font-size: clamp(2.2rem, 9vw, 3.2rem);
+      color: var(--pink-deep);
+      margin: 8px 0 10px;
+      line-height: 1.2;
+    }
+    p {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+    }
+    .bar {
+      margin: 24px auto 8px;
+      height: 14px;
+      width: 80%;
+      background: #ffe3ee;
+      border-radius: 999px;
+      overflow: hidden;
+      border: 2px solid var(--pink);
+    }
+    .bar span {
+      display: block;
+      height: 100%;
+      width: 60%;
+      background: repeating-linear-gradient(45deg, var(--pink) 0 12px, #ffb6d1 12px 24px);
+      border-radius: 999px;
+      animation: fill 3s ease-in-out infinite alternate;
+    }
+    .small { font-size: 0.9rem; opacity: 0.75; }
+    .float {
+      position: fixed;
+      bottom: -40px;
+      z-index: 1;
+      animation: rise linear infinite;
+      opacity: 0.8;
+      user-select: none;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0) rotate(-6deg); }
+      50% { transform: translateY(-12px) rotate(6deg); }
+    }
+    @keyframes fill {
+      from { width: 35%; }
+      to { width: 78%; }
+    }
+    @keyframes rise {
+      to { transform: translateY(-115vh) rotate(25deg); opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .icon, .bar span, .float { animation: none; }
+      .float { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">🚧</div>
+    <h1>Angelia Salam</h1>
+    <p>Under construction</p>
+    <div class="bar"><span></span></div>
+    <div class="small">something is coming soon ✨</div>
+  </div>
+
+  <span class="float" style="left:8%;  font-size:28px; animation-duration:9s;  animation-delay:0s">💗</span>
+  <span class="float" style="left:22%; font-size:20px; animation-duration:12s; animation-delay:2s">✨</span>
+  <span class="float" style="left:38%; font-size:32px; animation-duration:10s; animation-delay:4s">🌸</span>
+  <span class="float" style="left:55%; font-size:22px; animation-duration:13s; animation-delay:1s">💖</span>
+  <span class="float" style="left:70%; font-size:26px; animation-duration:11s; animation-delay:3s">✨</span>
+  <span class="float" style="left:85%; font-size:30px; animation-duration:9.5s; animation-delay:5s">🌷</span>
+  <span class="float" style="left:94%; font-size:20px; animation-duration:12s; animation-delay:6s">💗</span>
+</body>
+</html>
